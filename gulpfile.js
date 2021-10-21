@@ -49,7 +49,7 @@ function style() {
 // Compile and Minify JS
 function js() {
     return src([
-        `${srcDir}/js/jquery-3.5.1.js`,
+        // `${srcDir}/js/jquery-3.5.1.js`,
         `${srcDir}/js/!(index)*.js`,
         `${srcDir}/js/index.js`,
     ])

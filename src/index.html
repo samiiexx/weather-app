@@ -1,17 +1,59 @@
+<!--
+ Copyright 2021 sfchi
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script
-            src="https://kit.fontawesome.com/c867eaa577.js"
-            crossorigin="anonymous"
-        ></script>
-        <link rel="shortcut icon" href="images/logo.png" type="image/png" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Project Title</title>
-    </head>
-    <body>
-        <script src="js/index.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App Test</title>
+</head>
+<body>
+    <div class="container container-sm my-2 mx-auto">
+        <h1 class="h1 h1-title my-2 text-center">Weather App</h1>
+        <form class="change-location my-4 text-center text-muted">
+            <label for="city" class=""
+                >Enter a location for weather information</label
+            >
+            <input type="text" name="city" class="input p-2" />
+        </form>
+
+        <div class="card hide">
+            <img
+                src="https://via.placeholder.com/300x200"
+                alt="Placeholder Image"
+                class="time card-img-top"
+            />
+            <div class="icon bg-light mx-auto text-center">
+                <!-- Icon -->
+                <img src="" alt="" class="img-icon">
+            </div>
+            <div class="text-muted text-center details">
+                <h2 class="h2 my-1">City Name</h2>
+                <div class="my-1">Weather condition</div>
+                <div class="temp-group my-2">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/forecast.js"></script>
+    <script src="js/index.js"></script>
+</body>
 </html>
